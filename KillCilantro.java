@@ -22,7 +22,7 @@ public class KillCilantro {
       while (out.indexOf(replaceMe) != -1) {
          int tempInt1 = out.indexOf(replaceMe);
          String tempString1 = out.substring(0,tempInt1);
-         String tempString2 = out.substring((tempInt1 + 8),out.length());         
+         String tempString2 = out.substring((tempInt1 + replaceMe.length()),out.length());         
          out = tempString1 + replacer + tempString2;
          
       }
