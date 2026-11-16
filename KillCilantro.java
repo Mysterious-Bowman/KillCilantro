@@ -1,15 +1,20 @@
 public class KillCilantro {
    public static void main(String[] args) {
-      System.out.println(removeCilantro("5 day blinding stew:\n 1 cup cilantro\n 10,000 cups dirt","cilantro","parsley"));
-      System.out.println(removeCilantro("5 cilantro blinding stew:\n 1 cup cilantro\n 10,000 cilantro dirt","cilantro","parsley"));
+      System.out.println(killCilantro("5 day blinding stew:\n 1 cup cilantro\n 10,000 cups dirt","cilantro","parsley"));
+      System.out.println(killCilantro("5 cilantro blinding stew:\n 1 cup cilantro\n 10,000 cilantro dirt","cilantro","parsley"));
       
+      System.out.println(killCilantro("testcilantrotest","cilantro","parsley"));
+      System.out.println(killCilantro("cilantrotest","cilantro","parsley"));
+      System.out.println(killCilantro("nothinghere","cilantro","parsley"));
+      System.out.println(killCilantro("testcilantro","cilantro","parsley"));
+      System.out.println(killCilantro("cilantrocilantrocilantro","cilantro","parsley"));
       
       
       
       
    }
    
-   public static String removeCilantro (String in, String replaceMe, String replacer) {
+   public static String killCilantro (String in, String replaceMe, String replacer) {
    String out = in;
    
    
